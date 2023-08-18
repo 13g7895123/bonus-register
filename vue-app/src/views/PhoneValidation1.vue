@@ -63,7 +63,7 @@ const submit = async() => {
     if (success){
         emits('closeDialog')
         Swal.fire({
-            title: `建立紀錄成功`,
+            title: `建立紀錄成功1`,
             icon: 'success',
             showConfirmButton: false,
             showCancelButton: false,
