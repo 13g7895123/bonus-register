@@ -43,6 +43,22 @@ const sendCode = async() => {
         })
         apiParam.value = '?action=sendCode'
         apiUrl.value = apiUrlPrefix + "phone.php" + apiParam.value
+
+        const { data: { success, msg } } = await axios.post(
+            apiUrl.value, formData.value
+        )
+
+        if (success){
+            Swal.fire({
+                title: '認證碼發送成功',
+                icon: 'success',
+                showConfirmButton: false,
+                showCancelButton: false,
+                timer: 2000
+            })
+        }else{
+            
+        }
     }else{
         // please input phone
     }
