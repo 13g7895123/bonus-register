@@ -2,7 +2,7 @@ const routes = [
     {
         path: "/",
         name: 'Home',
-        component: () => import('../views/PhoneValidation.vue'),
+        component: () => import('../views/Base.vue'),
         // children: [
         //     { 
         //         path: "/money",
@@ -14,6 +14,11 @@ const routes = [
         //     { path: "/bonus", component: () => import('../views/Bonus.vue')},
         //     { path: "/test", component: () => import('../views/Test.vue')},
         // ]
+    },
+    {
+        path: "/phoneValidation",
+        name: 'phoneValidation',
+        component: () => import('../views/PhoneValidation.vue'),
     },
     {
         path: "/checkAccount",
