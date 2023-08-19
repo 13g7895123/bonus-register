@@ -1,10 +1,10 @@
 <template>
     <!-- login box -->
     <div id='bg' class="w-screen h-screen">
-        <!-- <form @submit.prevent="submit" id="login-box" class="rounded-lg">
+        <div @submit.prevent="submit" id="login-box" class="rounded-lg">
             <div id="mask"></div>
             <h2 class="text-white mt-12">帳號註冊</h2>
-            <div id="form_area">
+            <form id="form_area">
                 <div class="inp_group mt-12">
                     <input v-model = 'phone' required>
                     <span class="">手機號碼</span>
@@ -26,8 +26,8 @@
                     class="bg-white rounded flex justify-center items-center btn py-1 mt-3"
                     @click = "router.push('/forgetPassword')"
                     >找回密碼</div>
-            </div>
-        </form> -->
+            </form>
+        </div>
     </div>
 </template>
 <script setup>
