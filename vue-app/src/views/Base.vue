@@ -1,5 +1,6 @@
 <template>
-    <Base />    
+    <Base>
+    </Base>
 <!-- <div id='bg' class="w-screen h-screen">
         <div id="login-box" class="rounded-lg">
             <div id="mask"></div>
