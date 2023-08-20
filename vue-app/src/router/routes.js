@@ -3,17 +3,6 @@ const routes = [
         path: "/",
         name: 'Home',
         component: () => import('../views/Base.vue'),
-        // children: [
-        //     { 
-        //         path: "/money",
-        //         component: () => import('../views/Money.vue'),
-        //         // children :[
-        //         //     { path: "/bonus", component: () => import('../views/Bonus.vue')},
-        //         // ]
-        //     },
-        //     { path: "/bonus", component: () => import('../views/Bonus.vue')},
-        //     { path: "/test", component: () => import('../views/Test.vue')},
-        // ]
     },
     {
         path: "/phoneValidation",

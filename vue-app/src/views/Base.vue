@@ -12,7 +12,9 @@
 <script setup>
 import { useRouter } from 'vue-router'
 import { computed, onMounted } from 'vue'
-import PhoneValidation from './PhoneValidation.vue';
+// import PhoneValidation from './PhoneValidation.vue';
+import PhoneValidation from '../components/form/PhoneValidation.vue';
+
 
 const router = useRouter()
 const path = computed(() => router.currentRoute.value.name)
