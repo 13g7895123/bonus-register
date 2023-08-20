@@ -1,7 +1,7 @@
 <template>
     <Base>
         <!-- <template v-slot="form"> -->
-            <PhoneValidation />
+            <!-- <PhoneValidation /> -->
         <!-- </template> -->
     </Base>
 </template>
