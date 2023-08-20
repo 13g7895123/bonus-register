@@ -10,12 +10,12 @@
     </div>
 </template>
 <script setup>
-import { useRoute } from 'vue-router'
+import { routerViewLocationKey, useRouter } from 'vue-router'
 import { computed, onMounted } from 'vue'
 import PhoneValidation from './PhoneValidation.vue';
 
-const route = useRoute()
-const path = computed(() => route.name)
+const router = useRouter()
+const path = computed(() => router.currentRoute.value.name)
 
 onMounted(() => {
     console.log(path);
