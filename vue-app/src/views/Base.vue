@@ -2,7 +2,7 @@
     <Base>
         <!-- <div> -->
         <!-- <template v-slot="form"> -->
-        <PhoneValidation />
+        <phone-validation />
         <!-- </template> -->
     </Base>
 </template>
