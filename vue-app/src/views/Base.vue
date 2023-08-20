@@ -10,7 +10,7 @@
     </div>
 </template>
 <script setup>
-import { routerViewLocationKey, useRouter } from 'vue-router'
+import { useRouter } from 'vue-router'
 import { computed, onMounted } from 'vue'
 import PhoneValidation from './PhoneValidation.vue';
 
