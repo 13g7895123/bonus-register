@@ -1,8 +1,8 @@
 <template>
     <Base>
-        <template v-slot="form">
+        <!-- <template v-slot="form"> -->
             <PhoneValidation />
-        </template>
+        <!-- </template> -->
     </Base>
 </template>
 <script setup>
