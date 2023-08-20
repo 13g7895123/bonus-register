@@ -15,7 +15,7 @@ import { computed, onMounted } from 'vue'
 import PhoneValidation from './PhoneValidation.vue';
 
 const route = useRoute()
-const path  = computed(() => route.path)
+const path = computed(() => route.name)
 
 onMounted(() => {
     console.log(path);
