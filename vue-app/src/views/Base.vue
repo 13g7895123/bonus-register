@@ -1,12 +1,13 @@
 <template>
     <!-- login box -->
     <div id='bg' class="w-screen h-screen">
-        <div @submit.prevent="submit" id="login-box" class="rounded-lg">
+        <div id="login-box" class="rounded-lg">
             <div id="mask"></div>
             <!-- title -->
             <h2 class="text-white mt-12">帳號註冊</h2>
-            <form id="form_area">
-                <!-- <div class="inp_group mt-12">
+            <PhoneValidation />
+            <!-- <form id="form_area">
+                <div class="inp_group mt-12">
                     <input v-model = 'phone' required>
                     <span class="">手機號碼</span>
                     <i></i>
@@ -26,12 +27,14 @@
                 <div
                     class="bg-white rounded flex justify-center items-center btn py-1 mt-3"
                     @click = "router.push('/forgetPassword')"
-                    >找回密碼</div> -->
-            </form>
+                    >找回密碼</div>
+            </form> -->
         </div>
     </div>
 </template>
 <script setup>
+import PhoneValidation from './PhoneValidation.vue';
+
 </script>
 <style>
 /* --- scroll bar hide start --- */
