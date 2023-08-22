@@ -20,8 +20,8 @@
         <hr class="mt-5">
         <div 
             class="bg-white rounded flex justify-center items-center btn py-1 mt-5"
-            @click = "router.push('/checkAccount')"
-            >查詢帳號</div>
+            @click = "router.push('/phonevalidation')"
+            >申請帳號</div>
         <div
             class="bg-white rounded flex justify-center items-center btn py-1 mt-3"
             @click = "router.push('/forgetPassword')"
