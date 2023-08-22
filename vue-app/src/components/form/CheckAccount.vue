@@ -36,7 +36,7 @@
     </form>
 </template>
 <script setup>
-import IdentifyCode from '../components/tools/IdentifyCode.vue';
+import IdentifyCode from '../tools/IdentifyCode.vue';
 import { ref } from 'vue'
 import axios from 'axios'
 import Swal from 'sweetalert2'
