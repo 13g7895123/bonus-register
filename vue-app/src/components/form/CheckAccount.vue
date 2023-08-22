@@ -16,7 +16,7 @@
             <i style="width: 60%;"></i>
             <IdentifyCode
                 ref="identify"
-                class="code-box"
+                class="code-box ml-1"
                 :contentWidth="120"
                 :contentHeight="30"
                 @updateIdentifyCode="setIdentifyCode"
