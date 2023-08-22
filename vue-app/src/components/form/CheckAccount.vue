@@ -13,7 +13,7 @@
         <div class="inp_group mt-2">
             <input v-model = 'code' required>
             <span>驗證碼</span>
-            <i style="width: 60%;"></i>
+            <i style="width: 58%;"></i>
             <IdentifyCode
                 ref="identify"
                 class="code-box"
@@ -37,7 +37,7 @@
 </template>
 <script setup>
 import IdentifyCode from '../tools/IdentifyCode.vue';
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 import { useRouter } from "vue-router";
@@ -60,6 +60,10 @@ const validateIdentifyCode = (rule, value, callback) => {
     }
 };
 let curIdentifyCode = ref("");
+
+onMounted(() => {
+    alert(curIdentifyCode.value)
+})
 
 const setIdentifyCode = (val) => {
   curIdentifyCode.value = val;
