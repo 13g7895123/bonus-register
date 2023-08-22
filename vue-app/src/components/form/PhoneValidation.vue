@@ -134,18 +134,6 @@ body {
     z-index: 1;
 }
 
-#login-box{
-    width: 350px;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    backdrop-filter: blur(10px);
-    overflow: hidden;
-    inset: 3px;
-    z-index: 20;
-}
-
 #login-box::before{
     content: '';
     position: absolute;
