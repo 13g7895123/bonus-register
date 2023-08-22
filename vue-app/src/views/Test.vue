@@ -4,7 +4,7 @@
           ref="identify"
           class="code-box"
           :contentWidth="120"
-          :contentHeight="60"
+          :contentHeight="30"
           @updateIdentifyCode="setIdentifyCode"
         ></IdentifyCode>
 </template>

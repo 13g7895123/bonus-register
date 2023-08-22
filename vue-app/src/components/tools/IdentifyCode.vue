@@ -15,7 +15,8 @@
   const props = defineProps({
     identifyCode: {
       type: String,
-      default: "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    //   default: "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+      default: "0123456789",
     },
     fontSizeMin: {
       type: Number,
