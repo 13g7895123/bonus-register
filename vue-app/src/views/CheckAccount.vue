@@ -48,7 +48,7 @@ body {
 
 #login-box{
     width: 350px;
-    height: 500px;
+    height: 530px;
     display: flex;
     flex-direction: column;
     align-items: center;
