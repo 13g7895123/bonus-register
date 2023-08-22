@@ -5,9 +5,14 @@
             <span class="">手機號碼</span>
             <i></i>
         </div>
+        <div class="inp_group mt-12">
+            <input v-model = 'phone' required>
+            <span class="">生日(西元年/月/日)</span>
+            <i></i>
+        </div>
         <div class="inp_group mt-2">
             <input v-model = 'code' required>
-            <span>認證碼</span>
+            <span>驗證碼</span>
             <i style="width: 60%;"></i>
             <div id='btn_send_code' class="btn" @click="sendCode">發送認證碼</div>
         </div>
