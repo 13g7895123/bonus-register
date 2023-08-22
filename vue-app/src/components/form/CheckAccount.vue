@@ -17,7 +17,7 @@
             <IdentifyCode
                 ref="identify"
                 class="code-box"
-                :contentWidth="120"
+                :contentWidth="100"
                 :contentHeight="30"
                 @updateIdentifyCode="setIdentifyCode"
                 >
