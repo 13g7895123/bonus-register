@@ -16,7 +16,7 @@
             <i style="width: 60%;"></i>
             <IdentifyCode
                 ref="identify"
-                class="code-box absolute right-0"
+                class="code-box"
                 :contentWidth="120"
                 :contentHeight="30"
                 @updateIdentifyCode="setIdentifyCode"
@@ -219,5 +219,11 @@ h2, #form_area{
     display: flex;
     cursor: pointer;
     background-color: #fff;
+}
+
+.code-box{
+    position: absolute;
+    right: 0;
+    top: 15px;
 }
 </style>
