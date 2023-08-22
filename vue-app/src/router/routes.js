@@ -5,7 +5,7 @@ const routes = [
         component: () => import('../views/Base.vue'),
     },
     {
-        path: "/phoneValidation",
+        path: "/phonevalidation",
         name: 'phoneValidation',
         component: () => import('../views/PhoneValidation.vue'),
     },
