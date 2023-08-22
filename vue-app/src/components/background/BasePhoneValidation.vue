@@ -9,5 +9,5 @@
     </div>
 </template>
 <script setup>
-import PhoneValidation from '../components/form/PhoneValidation.vue';
+import PhoneValidation from '../form/PhoneValidation.vue';
 </script>
