@@ -1,12 +1,9 @@
 <template>
-    <Base>
-        <template v-slot="form">
-            <PhoneValidation />
-        </template>
-    </Base>
+    <BasePhoneValidation>
+    </BasePhoneValidation>
 </template>
 <script setup>
-import Base from '../components/background/Base.vue';
+import BasePhoneValidation from '../components/background/BasePhoneValidation.vue';
 import PhoneValidation from '../components/form/PhoneValidation.vue';
 
 </script>
