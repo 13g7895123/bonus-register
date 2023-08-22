@@ -1,14 +1,15 @@
 <template>
-    <canvas height="600" width="600"></canvas>
-    <!-- <IdentifyCode
+    <!-- <canvas height="600" width="600"></canvas> -->
+    <IdentifyCode
           ref="identify"
           class="code-box"
           :contentWidth="120"
           :contentHeight="60"
           @updateIdentifyCode="setIdentifyCode"
-        ></IdentifyCode> -->
+        ></IdentifyCode>
 </template>
 <script setup>
+import { ref } from 'vue'
 import Swal from 'sweetalert2'
 import IdentifyCode from '../components/tools/IdentifyCode.vue';
 
