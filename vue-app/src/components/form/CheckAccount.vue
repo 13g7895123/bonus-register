@@ -5,7 +5,7 @@
             <span class="">手機號碼</span>
             <i></i>
         </div>
-        <div class="inp_group mt-12">
+        <div class="inp_group mt-2">
             <input v-model = 'phone' required>
             <span class="">生日(西元年/月/日)</span>
             <i></i>
