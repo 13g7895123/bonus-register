@@ -1,19 +1,39 @@
 <template>
-    <div>
-        <canvas ref="domRef" width="152" height="40" class="cursor-pointer" @click="getImgCode"></canvas>
-    </div>
+    <canvas height="600" width="600"></canvas>
+    <!-- <IdentifyCode
+          ref="identify"
+          class="code-box"
+          :contentWidth="120"
+          :contentHeight="60"
+          @updateIdentifyCode="setIdentifyCode"
+        ></IdentifyCode> -->
 </template>
 <script setup>
 import Swal from 'sweetalert2'
+import IdentifyCode from '../components/tools/IdentifyCode.vue';
 
-const test = () => {
-    Swal.fire({
-        title: `測試成功`,
-        icon: 'success',
-        showConfirmButton: false,
-        showCancelButton: false,
-        timer: 2000,
-    })
-}
+const identify = ref(null);
+const validateIdentifyCode = (rule, value, callback) => {
+    if (value !== curIdentifyCode.value) {
+        callback(new Error("验证码错误!"));
+        state.loginForm.identifyCode = "";
+        identify.value.refreshCode();
+    } else {
+        callback();
+    }
+};
+let curIdentifyCode = ref("");
+
+const setIdentifyCode = (val) => {
+  curIdentifyCode.value = val;
+};
 
 </script>
+<style scoped>
+.code-box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+</style>
