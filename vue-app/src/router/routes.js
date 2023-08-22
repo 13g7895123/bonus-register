@@ -10,7 +10,7 @@ const routes = [
         component: () => import('../views/PhoneValidation.vue'),
     },
     {
-        path: "/checkAccount",
+        path: "/checkaccount",
         name: 'checkAccount',
         component: () => import('../views/CheckAccount.vue'),
     },
