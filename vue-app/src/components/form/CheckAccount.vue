@@ -224,6 +224,6 @@ h2, #form_area{
 .code-box{
     position: absolute;
     right: 0;
-    top: 15px;
+    top: 14px;
 }
 </style>
