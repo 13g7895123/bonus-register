@@ -134,7 +134,8 @@
   };
   const drawDot = (ctx) => {
     // 绘制干扰点
-    for (let i = 0; i < 100; i++) {
+    // for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 10; i++) {
       ctx.fillStyle = randomColor(0, 255);
       ctx.beginPath();
       ctx.arc(
