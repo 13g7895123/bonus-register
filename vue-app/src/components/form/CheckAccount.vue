@@ -65,4 +65,3 @@ const setIdentifyCode = (val) => {
   curIdentifyCode.value = val;
 };
 </script>
-<style>
