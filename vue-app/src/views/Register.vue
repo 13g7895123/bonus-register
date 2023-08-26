@@ -1,57 +1,8 @@
 <template>
-    <!-- login box -->
-    <div id='bg' class="w-screen h-screen">
-        <form @submit.prevent="submit" id="login-box" class="rounded-lg">
-            <div id="mask"></div>
-            <h2 class="text-white mt-5">帳號註冊</h2>
-            <!-- input box -->
-            <div id="form_area">
-                <div class="inp_group">
-                    <input required>
-                    <span class="">手機號碼</span>
-                    <i></i>
-                </div>
-                <div class="inp_group">
-                    <input required>
-                    <span>認證碼</span>
-                    <i></i>
-                    <!-- <div class="border-solid rounded-sm cursor-pointer px-1 py-1" style="cursor: pointer;">發送認證碼</div> -->
-                </div>
-                <div class="inp_group">
-                    <input required>
-                    <span>遊戲帳號</span>
-                    <i></i>
-                </div>
-                <div class="inp_group">
-                    <input required>
-                    <span>遊戲密碼</span>
-                    <i></i>
-                </div>
-                <div class="inp_group">
-                    <input required>
-                    <span>確認密碼</span>
-                    <i></i>
-                </div>
-                <div class="inp_group">
-                    <input required>
-                    <span>出生年月日</span>
-                    <i></i>
-                </div>
-                <div class="inp_group">
-                    <input required>
-                    <span>驗證碼</span>
-                    <i></i>
-                </div>
-                <div class="bg-white rounded flex justify-center items-center btn py-1 mb-2">提交註冊</div>
-                <div class="bg-white rounded flex justify-center items-center btn py-1">取消註冊</div>
-            </div>
-        </form>
-    </div>
+    <BaseRegister />
 </template>
 <script setup>
-const submit = () => {
-
-}
+import BaseRegister from '../components/background/BaseRegister.vue';
 </script>
 <style>
 /* --- scroll bar hide start --- */
@@ -96,8 +47,8 @@ body {
 }
 
 #login-box{
-    width: 400px;
-    height: 450px;
+    width: 350px;
+    height: 510px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,6 +97,10 @@ h2, #form_area{
     z-index: 20;
 }
 
+#form_area{
+    width: 80%;
+}
+
 .inp_group{
     /* margin-top: 0.5em; */
     position: relative;
@@ -191,8 +146,23 @@ h2, #form_area{
     height: 2px;
 }
 
+#btn_send_code{
+    padding: 2px 10px 2px 10px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+}
+
 .btn{
     display: flex;
     cursor: pointer;
+    background-color: #fff;
+}
+
+.code-box{
+    position: absolute;
+    right: 0;
+    top: 14px;
 }
 </style>

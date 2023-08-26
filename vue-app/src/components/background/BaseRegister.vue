@@ -4,10 +4,10 @@
         <div id="login-box" class="rounded-lg">
             <div id="mask"></div>
             <h2 class="text-white mt-12">註冊帳號</h2>
-            <PhoneValidation />
+            <CheckAccount />
         </div>
     </div>
 </template>
 <script setup>
-import PhoneValidation from '../form/PhoneValidation.vue';
+import CheckAccount from '../form/CheckAccount.vue';
 </script>
