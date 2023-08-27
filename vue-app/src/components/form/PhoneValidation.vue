@@ -81,6 +81,7 @@ const sendCode = async() => {
 }
 
 const submit = async() => {
+    alert(123)
     const formData = ref({
         phone: phone.value,
         code: code.value
@@ -101,10 +102,7 @@ const submit = async() => {
             showConfirmButton: false,
             showCancelButton: false,
             timer: 2000,
-        }).then(() => {
-            // emits('handleUpdateProfiles')
         })
-        // alert('success')
     }else{
         Swal.fire({
                 title: '系統訊息',
