@@ -51,7 +51,7 @@ const sendCode = async() => {
         if (success){
             Swal.fire({
                 title: '系統通知',
-                test: '認證碼發送成功',
+                text: msg,
                 icon: 'success',
                 showConfirmButton: false,
                 showCancelButton: false,
@@ -60,7 +60,7 @@ const sendCode = async() => {
         }else{
             Swal.fire({
                 title: '系統通知',
-                test: msg,
+                text: msg,
                 icon: 'error',
                 showConfirmButton: false,
                 showCancelButton: false,
