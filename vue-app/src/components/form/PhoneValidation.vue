@@ -11,7 +11,7 @@
             <i style="width: 60%;"></i>
             <div id='btn_send_code' class="btn" @click="sendCode">發送認證碼</div>
         </div>
-        <div class="bg-white rounded flex justify-center items-center btn py-1 mb-2 mt-6">送出</div>
+        <div class="bg-white rounded flex justify-center items-center btn py-1 mb-2 mt-6" @click="submit">送出</div>
         <hr class="mt-5">
         <div 
             class="bg-white rounded flex justify-center items-center btn py-1 mt-5"
