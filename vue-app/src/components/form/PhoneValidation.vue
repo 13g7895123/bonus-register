@@ -69,26 +69,34 @@ const sendCode = async() => {
         }
     }else{
         // please input phone
+        Swal.fire({
+                title: '系統通知',
+                text: '請輸入手機號碼',
+                icon: 'error',
+                showConfirmButton: false,
+                showCancelButton: false,
+                timer: 2000
+            })
     }
 }
 
 const submit = async() => {
     const formData = ref({
         phone: phone.value,
+        code: code.value
     })
+    apiParam.value = '?action=varify_validation_code'
+    apiUrl.value = apiUrlPrefix + "phone.php" + apiParam.value
 
-    apiUrl.value = '/api/bonus'
     const { data: { success, msg } } = await axios.post(
-        apiUrl.value,
-        formData.value
+        apiUrl.value, formData.value
     )
 
-    console.log(success);
-
     if (success){
-        emits('closeDialog')
+        // emits('closeDialog')
         Swal.fire({
-            title: `建立紀錄成功`,
+            title: `系統訊息`,
+            text: msg,
             icon: 'success',
             showConfirmButton: false,
             showCancelButton: false,
