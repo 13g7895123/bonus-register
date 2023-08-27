@@ -81,7 +81,6 @@ const sendCode = async() => {
 }
 
 const submit = async() => {
-    alert(123)
     const formData = ref({
         phone: phone.value,
         code: code.value
