@@ -59,7 +59,7 @@ const sendCode = async() => {
             })
         }else{
             Swal.fire({
-                title: '系統通知',
+                title: '系統訊息',
                 text: msg,
                 icon: 'error',
                 showConfirmButton: false,
@@ -70,7 +70,7 @@ const sendCode = async() => {
     }else{
         // please input phone
         Swal.fire({
-                title: '系統通知',
+                title: '系統訊息',
                 text: '請輸入手機號碼',
                 icon: 'error',
                 showConfirmButton: false,
@@ -105,6 +105,15 @@ const submit = async() => {
             // emits('handleUpdateProfiles')
         })
         // alert('success')
+    }else{
+        Swal.fire({
+                title: '系統訊息',
+                text: msg,
+                icon: 'error',
+                showConfirmButton: false,
+                showCancelButton: false,
+                timer: 2000
+            })
     }
 }
 </script>
