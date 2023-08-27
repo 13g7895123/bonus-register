@@ -50,14 +50,22 @@ const sendCode = async() => {
 
         if (success){
             Swal.fire({
-                title: '認證碼發送成功',
+                title: '系統通知',
+                test: '認證碼發送成功',
                 icon: 'success',
                 showConfirmButton: false,
                 showCancelButton: false,
                 timer: 2000
             })
         }else{
-            
+            Swal.fire({
+                title: '系統通知',
+                test: msg,
+                icon: 'error',
+                showConfirmButton: false,
+                showCancelButton: false,
+                timer: 2000
+            })
         }
     }else{
         // please input phone
