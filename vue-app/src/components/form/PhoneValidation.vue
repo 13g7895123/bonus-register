@@ -104,13 +104,14 @@ const submit = async() => {
         })
     }else{
         Swal.fire({
-                title: '系統訊息',
-                text: msg,
-                icon: 'error',
-                showConfirmButton: false,
-                showCancelButton: false,
-                timer: 2000
-            })
+            title: '系統訊息',
+            text: msg,
+            icon: 'error',
+            showConfirmButton: false,
+            showCancelButton: false,
+            timer: 2000
+        })
+        code.value = ''
     }
 }
 </script>
