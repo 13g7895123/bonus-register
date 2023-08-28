@@ -1,8 +1,18 @@
 <template>
     <form id="form_area">
         <div class="inp_group mt-12">
-            <input v-model = 'phone' required>
-            <span class="">手機號碼</span>
+            <input v-model = 'account' required>
+            <span class="">遊戲帳號</span>
+            <i></i>
+        </div>
+        <div class="inp_group mt-12">
+            <input v-model = 'password' required>
+            <span class="">密碼</span>
+            <i></i>
+        </div>
+        <div class="inp_group mt-12">
+            <input v-model = 'checkPassword' required>
+            <span class="">確認密碼</span>
             <i></i>
         </div>
         <div class="inp_group mt-2">
@@ -10,29 +20,14 @@
             <span class="">生日(西元年/月/日)</span>
             <i></i>
         </div>
-        <div class="inp_group mt-2">
-            <input v-model = 'code' required>
-            <span>驗證碼</span>
-            <i style="width: 58%;"></i>
-            <IdentifyCode
-                ref="identify"
-                class="code-box"
-                :contentWidth="110"
-                :contentHeight="40"
-                @updateIdentifyCode="setIdentifyCode"
-                >
-            </IdentifyCode>
-        </div>
-        <div class="bg-white rounded flex justify-center items-center btn py-1 mb-2 mt-6">送出</div>
-        <hr class="mt-5">
         <div 
             class="bg-white rounded flex justify-center items-center btn py-1 mt-5"
             @click = "router.push('/phonevalidation')"
-            >申請帳號</div>
+            >送出</div>
         <div
             class="bg-white rounded flex justify-center items-center btn py-1 mt-3"
             @click = "router.push('/forgetPassword')"
-            >找回密碼</div>
+            >返回</div>
     </form>
 </template>
 <script setup>
