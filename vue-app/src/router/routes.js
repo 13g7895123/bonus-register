@@ -10,7 +10,7 @@ const routes = [
         component: () => import('../views/PhoneValidation.vue'),
     },
     {
-        path: "/register",
+        path: "/register/:phone",
         name: 'register',
         component: () => import('../views/Register.vue'),
         props: (route) => route.params

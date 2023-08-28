@@ -59,13 +59,13 @@ const apiParam = ref()
 const apiUrlPrefix = '/api/bonus-register/'
 const router = useRouter()
 
-const props = defineProps({
-    phone: String
-})
+// const props = defineProps({
+//     phone: String
+// })
 
 const submit = async() => {
 
-    alert(props.phone)
+    alert(router.params.phone)
 
     if (password.value == checkPassword.value){
         const formData = ref({
