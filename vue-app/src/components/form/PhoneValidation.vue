@@ -70,27 +70,35 @@ const sendCode = async() => {
     }else{
         // please input phone
         Swal.fire({
-                title: '系統訊息',
-                text: '請輸入手機號碼',
-                icon: 'error',
-                showConfirmButton: false,
-                showCancelButton: false,
-                timer: 2000
+            title: '系統訊息',
+            text: '請輸入手機號碼',
+            icon: 'error',
+            showConfirmButton: false,
+            showCancelButton: false,
+            timer: 2000
+        }).then(() => {
+            router.push({
+                name: "register",
+                params: {
+                    phone: phone.value,
+                },
             })
+        })
     }
 }
 
 const submit = async() => {
-    const formData = ref({
-        phone: phone.value,
-        code: code.value
-    })
-    apiParam.value = '?action=varify_validation_code'
-    apiUrl.value = apiUrlPrefix + "phone.php" + apiParam.value
+    // const formData = ref({
+    //     phone: phone.value,
+    //     code: code.value
+    // })
+    // apiParam.value = '?action=varify_validation_code'
+    // apiUrl.value = apiUrlPrefix + "phone.php" + apiParam.value
 
-    const { data: { success, msg } } = await axios.post(
-        apiUrl.value, formData.value
-    )
+    // const { data: { success, msg } } = await axios.post(
+    //     apiUrl.value, formData.value
+    // )
+    const success = true
 
     if (success){
         // emits('closeDialog')

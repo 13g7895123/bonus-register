@@ -13,6 +13,7 @@ const routes = [
         path: "/register",
         name: 'register',
         component: () => import('../views/Register.vue'),
+        props: (route) => route.params
     },
     {
         path: "/checkaccount",

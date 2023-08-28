@@ -35,7 +35,7 @@
         </div>
         <div 
             class="bg-white rounded flex justify-center items-center btn py-1 mt-5"
-            @click = ""
+            @click = "submit"
             >提交註冊</div>
         <div
             class="bg-white rounded flex justify-center items-center btn py-1 mt-3"
@@ -50,12 +50,68 @@ import axios from 'axios'
 import Swal from 'sweetalert2'
 import { useRouter } from "vue-router";
 
-const phone = ref()
-const code = ref()
+const account = ref()
+const password = ref()
+const checkPassword = ref()
+const birthday = ref()
 const apiUrl = ref()
 const apiParam = ref()
-const apiUrlPrefix = 'http://170.187.229.132:9090/api/bonus-register/'
+const apiUrlPrefix = '/api/bonus-register/'
 const router = useRouter()
+
+const props = defineProps({
+    phone: String
+})
+
+const submit = async() => {
+
+    alert(props.phone)
+
+    if (password.value == checkPassword.value){
+        const formData = ref({
+            account: account.value,
+            password: password.value,
+            birthday: birthday.value
+        })
+        apiParam.value = '?action=register'
+        apiUrl.value = apiUrlPrefix + "register.php" + apiParam.value
+
+        const { data: { success, msg } } = await axios.post(
+            apiUrl.value, formData.value
+        )
+
+        if (success){
+            // emits('closeDialog')
+            Swal.fire({
+                title: `系統訊息`,
+                text: msg,
+                icon: 'success',
+                showConfirmButton: false,
+                showCancelButton: false,
+                timer: 2000,
+            })
+        }else{
+            Swal.fire({
+                title: '系統訊息',
+                text: msg,
+                icon: 'error',
+                showConfirmButton: false,
+                showCancelButton: false,
+                timer: 2000
+            })
+            code.value = ''
+        }
+    }else{
+        Swal.fire({
+                title: '系統訊息',
+                text: '密碼不相符，請重新確認',
+                icon: 'error',
+                showConfirmButton: false,
+                showCancelButton: false,
+                timer: 2000
+            })
+    }
+}
 
 const identify = ref(null);
 const validateIdentifyCode = (rule, value, callback) => {
