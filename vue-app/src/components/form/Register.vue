@@ -65,7 +65,7 @@ const router = useRouter()
 
 onMounted(() => {
     console.log(router);
-    console.log(router._value);
+    console.log(router.currentRoute);
     console.log(router.query);
     console.log(router.query.phone);
 })
