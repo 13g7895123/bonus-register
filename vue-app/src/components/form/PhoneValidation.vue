@@ -57,6 +57,7 @@ const sendCode = async() => {
                 showCancelButton: false,
                 timer: 2000
             })
+            alert(123)
             router.push({
                 name: "register",
                 params: {
