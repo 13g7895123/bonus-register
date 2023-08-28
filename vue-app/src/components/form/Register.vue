@@ -20,6 +20,19 @@
             <span class="">生日(西元年/月/日)</span>
             <i></i>
         </div>
+        <div class="inp_group mt-2">
+            <input v-model = 'code' required>
+            <span>驗證碼</span>
+            <i style="width: 58%;"></i>
+            <IdentifyCode
+                ref="identify"
+                class="code-box"
+                :contentWidth="110"
+                :contentHeight="40"
+                @updateIdentifyCode="setIdentifyCode"
+                >
+            </IdentifyCode>
+        </div>
         <div 
             class="bg-white rounded flex justify-center items-center btn py-1 mt-5"
             @click = ""
