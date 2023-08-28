@@ -56,14 +56,7 @@ const sendCode = async() => {
                 showConfirmButton: false,
                 showCancelButton: false,
                 timer: 2000
-            })
-            alert(123)
-            router.push({
-                name: "register",
-                params: {
-                    phone: phone.value,
-                },
-            })
+            })     
         }else{
             Swal.fire({
                 title: '系統訊息',
@@ -110,6 +103,12 @@ const submit = async() => {
             showConfirmButton: false,
             showCancelButton: false,
             timer: 2000,
+        })
+        router.push({
+            name: "register",
+            params: {
+                phone: phone.value,
+            },
         })
     }else{
         Swal.fire({
