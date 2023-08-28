@@ -63,6 +63,10 @@ const router = useRouter()
 //     phone: String
 // })
 
+onMounted(() => {
+    console.log(router.params.phone);
+})
+
 const submit = async() => {
 
     alert(router.params.phone)
