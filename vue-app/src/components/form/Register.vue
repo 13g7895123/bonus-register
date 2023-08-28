@@ -22,12 +22,12 @@
         </div>
         <div 
             class="bg-white rounded flex justify-center items-center btn py-1 mt-5"
-            @click = "router.push('/phonevalidation')"
-            >送出</div>
+            @click = ""
+            >提交註冊</div>
         <div
             class="bg-white rounded flex justify-center items-center btn py-1 mt-3"
-            @click = "router.push('/forgetPassword')"
-            >返回</div>
+            @click = "router.push('/phonevalidation')"
+            >取消註冊</div>
     </form>
 </template>
 <script setup>
