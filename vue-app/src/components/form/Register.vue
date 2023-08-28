@@ -64,7 +64,8 @@ const router = useRouter()
 // })
 
 onMounted(() => {
-    console.log(router.params);
+    console.log(router.query);
+    console.log(router.query.phone);
 })
 
 const submit = async() => {

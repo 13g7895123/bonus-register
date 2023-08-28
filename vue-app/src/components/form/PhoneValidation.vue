@@ -106,7 +106,7 @@ const submit = async() => {
         }).then(() =>{
             router.push({
                 name: "register",
-                params: {
+                query: {
                     phone: phone.value,
                 },
             })
