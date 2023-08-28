@@ -44,7 +44,7 @@
     </form>
 </template>
 <script setup>
-// import IdentifyCode from '../tools/IdentifyCode.vue';
+import IdentifyCode from '../tools/IdentifyCode.vue';
 import { onMounted, ref } from 'vue'
 import axios from 'axios'
 import Swal from 'sweetalert2'
