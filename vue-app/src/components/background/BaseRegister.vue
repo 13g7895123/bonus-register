@@ -4,10 +4,10 @@
         <div id="login-box" class="rounded-lg">
             <div id="mask"></div>
             <h2 class="text-white mt-12">註冊帳號</h2>
-            <CheckAccount />
+            <Register />
         </div>
     </div>
 </template>
 <script setup>
-import CheckAccount from '../form/CheckAccount.vue';
+import Register from '../form/Register.vue';
 </script>
