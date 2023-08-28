@@ -56,6 +56,13 @@ const sendCode = async() => {
                 showConfirmButton: false,
                 showCancelButton: false,
                 timer: 2000
+            }).then(() => {
+                router.push({
+                    name: "register",
+                    params: {
+                        phone: phone.value,
+                    },
+                })
             })
         }else{
             Swal.fire({
@@ -76,13 +83,6 @@ const sendCode = async() => {
             showConfirmButton: false,
             showCancelButton: false,
             timer: 2000
-        }).then(() => {
-            router.push({
-                name: "register",
-                params: {
-                    phone: phone.value,
-                },
-            })
         })
     }
 }
