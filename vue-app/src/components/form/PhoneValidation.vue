@@ -103,13 +103,15 @@ const submit = async() => {
             showConfirmButton: false,
             showCancelButton: false,
             timer: 2000,
+        }).then(() =>{
+            router.push({
+                name: "register",
+                params: {
+                    phone: phone.value,
+                },
+            })
         })
-        router.push({
-            name: "register",
-            params: {
-                phone: phone.value,
-            },
-        })
+        
     }else{
         Swal.fire({
             title: '系統訊息',
