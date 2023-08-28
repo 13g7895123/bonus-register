@@ -65,13 +65,12 @@ const router = useRouter()
 
 onMounted(() => {
     console.log(router);
+    console.log(router._value);
     console.log(router.query);
     console.log(router.query.phone);
 })
 
 const submit = async() => {
-
-    alert(router.params.phone)
 
     if (password.value == checkPassword.value){
         const formData = ref({
