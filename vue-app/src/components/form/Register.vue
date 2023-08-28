@@ -5,12 +5,12 @@
             <span class="">遊戲帳號</span>
             <i></i>
         </div>
-        <div class="inp_group mt-12">
+        <div class="inp_group mt-2">
             <input v-model = 'password' required>
             <span class="">密碼</span>
             <i></i>
         </div>
-        <div class="inp_group mt-12">
+        <div class="inp_group mt-2">
             <input v-model = 'checkPassword' required>
             <span class="">確認密碼</span>
             <i></i>
