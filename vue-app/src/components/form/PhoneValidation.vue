@@ -1,6 +1,6 @@
 <template>
     <form id="form_area">
-        <div class="inp_group mt-6">
+        <div class="inp_group mt-3">
             <input v-model = 'phone' required>
             <span class="">手機號碼</span>
             <i></i>
