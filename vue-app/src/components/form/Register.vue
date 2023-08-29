@@ -67,6 +67,8 @@ onMounted(() => {
 })
 
 const submit = async() => {
+    let swalData = []
+    swalData['title'] = '系統訊息';
 
     if (password.value == checkPassword.value){
         const formData = ref({
@@ -83,36 +85,31 @@ const submit = async() => {
         )
 
         if (success){
-            // emits('closeDialog')
-            Swal.fire({
-                title: `系統訊息`,
-                text: msg,
-                icon: 'success',
-                showConfirmButton: false,
-                showCancelButton: false,
-                timer: 2000,
-            })
+            swalData['text'] = msg;
+            swalData['icon'] = 'success';
+            swal(swalData)
         }else{
-            Swal.fire({
-                title: '系統訊息',
-                text: msg,
-                icon: 'error',
-                showConfirmButton: false,
-                showCancelButton: false,
-                timer: 2000
-            })
+            swalData['text'] = msg;
+            swalData['icon'] = 'error';
+            swal(swalData)
             code.value = ''
         }
     }else{
-        Swal.fire({
-                title: '系統訊息',
-                text: '密碼不相符，請重新確認',
-                icon: 'error',
-                showConfirmButton: false,
-                showCancelButton: false,
-                timer: 2000
-            })
+        swalData['text'] = '密碼不相符，請重新確認';
+        swalData['icon'] = 'error';
+        swal(swalData)
     }
+}
+
+const swal = (data) => {
+    Swal.fire({
+        title: data['title'],
+        text: data['msg'],
+        icon: data['icon'],
+        showConfirmButton: false,
+        showCancelButton: false,
+        timer: 2000
+    })
 }
 
 const identify = ref(null);
