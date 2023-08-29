@@ -112,6 +112,7 @@ const submit = async() => {
             router.push({
                 name: "register",
                 query: {
+                    server: server.value,
                     phone: phone.value,
                 },
             })
