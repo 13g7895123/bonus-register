@@ -56,6 +56,7 @@ const account = ref()
 const password = ref()
 const checkPassword = ref()
 const birthday = ref()
+const code = ref()
 const apiUrl = ref()
 const apiParam = ref()
 const apiUrlPrefix = '/api/bonus-register/'
@@ -92,12 +93,13 @@ const submit = async() => {
             swalData['text'] = msg;
             swalData['icon'] = 'error';
             swal(swalData)
-            code.value = ''
+            inputInit()
         }
     }else{
         swalData['text'] = '密碼不相符，請重新確認';
         swalData['icon'] = 'error';
         swal(swalData)
+        inputInit()
     }
 }
 
@@ -110,6 +112,14 @@ const swal = (data) => {
         showCancelButton: false,
         timer: 2000
     })
+}
+
+const inputInit = () => {
+    account.value = ''
+    password.value = ''
+    checkPassword.value = ''
+    birthday.value = ''
+    code.value = ''
 }
 
 const identify = ref(null);
