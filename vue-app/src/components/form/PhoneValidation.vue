@@ -24,17 +24,22 @@
     </form>
 </template>
 <script setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 import { useRouter } from "vue-router";
 
+// const server = ref()
 const phone = ref()
 const code = ref()
 const apiUrl = ref()
 const apiParam = ref()
 const apiUrlPrefix = '/api/bonus-register/'
 const router = useRouter()
+
+// onMounted(() => {
+//     server.value = router.currentRoute._value.params.server
+// })
 
 const sendCode = async() => {
     if (phone.value != ''){     // 驗證手機號碼不可為空值

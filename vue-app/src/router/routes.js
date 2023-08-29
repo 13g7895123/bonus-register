@@ -5,16 +5,15 @@ const routes = [
     //     component: () => import('../views/Base.vue'),
     // },
     {
-        path: "/phonevalidation",
+        path: "/phonevalidation/:server",
         name: 'phoneValidation',
         component: () => import('../views/PhoneValidation.vue'),
     },
     {
-        path: "/register/:phone",
+        path: "/register/:server/:phone",
         // path: "/register/",
         name: 'register',
         component: () => import('../views/Register.vue'),
-        // props: (route) => route.params
     },
     {
         path: "/checkaccount",

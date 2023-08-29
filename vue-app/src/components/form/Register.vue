@@ -50,6 +50,7 @@ import axios from 'axios'
 import Swal from 'sweetalert2'
 import { useRouter } from "vue-router";
 
+const server = ref()
 const phone = ref()
 const account = ref()
 const password = ref()
@@ -61,6 +62,7 @@ const apiUrlPrefix = '/api/bonus-register/'
 const router = useRouter()
 
 onMounted(() => {
+    server.value = router.currentRoute._value.params.server
     phone.value = router.currentRoute._value.params.phone
 })
 
