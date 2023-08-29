@@ -25,6 +25,7 @@ onMounted(async() => {
 })
 
 const get_server = async() => {
+    alert(123)
     const formData = ref({
         server: server.value,
     })
