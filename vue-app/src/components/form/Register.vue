@@ -106,7 +106,7 @@ const submit = async() => {
 const swalFunction = (data) => {
     Swal.fire({
         title: data['title'],
-        text: data['msg'],
+        text: data['text'],
         icon: data['icon'],
         showConfirmButton: false,
         showCancelButton: false,
