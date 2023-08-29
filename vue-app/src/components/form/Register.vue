@@ -34,7 +34,7 @@
             </IdentifyCode>
         </div>
         <div 
-            class="bg-white rounded flex justify-center items-center btn py-1 mt-5"
+            class="bg-white rounded flex justify-center items-center btn py-1 mt-6"
             @click = "submit"
             >提交註冊</div>
         <div
