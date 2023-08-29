@@ -46,7 +46,7 @@ body {
     z-index: 1;
 }
 
-#login-box{
+#register-box{
     width: 350px;
     height: 550px;
     display: flex;
@@ -58,7 +58,7 @@ body {
     z-index: 20;
 }
 
-#login-box::before{
+#register-box::before{
     content: '';
     position: absolute;
     top: -50%;
@@ -71,7 +71,7 @@ body {
     z-index: -1;
 }
 
-#login-box::after{
+#register-box::after{
     content: '';
     position: absolute;
     top: -50%;
