@@ -19,6 +19,7 @@ const server = ref()
 
 onMounted(() => {
     server.value = router.currentRoute._value.params.server
+    console.log(server.value);
 })
 
 </script>
