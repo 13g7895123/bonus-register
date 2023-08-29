@@ -12,7 +12,9 @@
 <script setup>
 import PhoneValidation from '../form/PhoneValidation.vue';
 import { onMounted, ref } from 'vue'
+import { useRouter } from "vue-router";
 
+const router = useRouter()
 const server = ref()
 
 onMounted(() => {
