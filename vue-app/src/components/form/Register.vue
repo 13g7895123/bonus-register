@@ -89,6 +89,7 @@ const submit = async() => {
             swalData['text'] = msg;
             swalData['icon'] = 'success';
             swalFunction(swalData)
+            inputInit(1)
         }else{
             swalData['text'] = msg;
             swalData['icon'] = 'error';
@@ -114,11 +115,13 @@ const swalFunction = (data) => {
     })
 }
 
-const inputInit = () => {
-    account.value = ''
-    password.value = ''
-    checkPassword.value = ''
-    birthday.value = ''
+const inputInit = (type = 0) => {
+    if (type === 1){  // 註冊完成，清除所有
+        account.value = ''
+        password.value = ''
+        checkPassword.value = ''
+        birthday.value = ''
+    }
     code.value = ''
 }
 
