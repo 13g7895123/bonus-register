@@ -6,12 +6,12 @@
             <i></i>
         </div>
         <div class="inp_group mt-2">
-            <input v-model = 'password' required>
+            <input v-model='password' type="password" required>
             <span class="">密碼</span>
             <i></i>
         </div>
         <div class="inp_group mt-2">
-            <input v-model = 'checkPassword' required>
+            <input v-model = 'checkPassword' type="password" required>
             <span class="">確認密碼</span>
             <i></i>
         </div>
