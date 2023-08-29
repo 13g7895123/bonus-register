@@ -18,6 +18,9 @@ import axios from 'axios'
 const router = useRouter()
 const server = ref()
 const server_name = ref()
+const apiUrl = ref()
+const apiParam = ref()
+const apiUrlPrefix = '/api/bonus-register/'
 
 onMounted(async() => {
     server.value = router.currentRoute._value.params.server
