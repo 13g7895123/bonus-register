@@ -4,7 +4,6 @@
 </template>
 <script setup>
 import BasePhoneValidation from '../components/background/BasePhoneValidation.vue';
-import PhoneValidation from '../components/form/PhoneValidation.vue';
 
 </script>
 <style>
