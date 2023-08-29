@@ -21,7 +21,10 @@ const server_name = ref()
 
 onMounted(async() => {
     server.value = router.currentRoute._value.params.server
-    
+    get_server()
+})
+
+const get_server = async() => {
     const formData = ref({
         server: server.value,
     })
@@ -35,6 +38,6 @@ onMounted(async() => {
     if (success){
         server_name.value = data;
     }
-})
+}
 
 </script>
