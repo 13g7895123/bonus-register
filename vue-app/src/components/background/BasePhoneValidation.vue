@@ -3,7 +3,7 @@
     <div id='bg' class="w-screen h-screen">
         <div id="login-box" class="rounded-lg">
             <div id="mask"></div>
-            <h2 class="text-white mt-8">註冊帳號</h2>
+            <h2 class="text-white mt-5">註冊帳號</h2>
             <h3 id='server_name' class="text-white">【{{ server }}】</h3>
             <PhoneValidation />
         </div>
