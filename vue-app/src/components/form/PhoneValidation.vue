@@ -13,14 +13,14 @@
         </div>
         <div class="bg-white rounded flex justify-center items-center btn py-1 mb-2 mt-6" @click="submit">送出</div>
         <hr class="mt-5">
-        <div 
-            class="bg-white rounded flex justify-center items-center btn py-1 mt-5"
-            @click = "router.push('/checkAccount')"
-            >查詢帳號</div>
         <div
             class="bg-white rounded flex justify-center items-center btn py-1 mt-3"
             @click = "router.push('/forgetPassword')"
             >找回密碼</div>
+        <div 
+            class="bg-white rounded flex justify-center items-center btn py-1 mt-5"
+            @click = ""
+            >客服中心</div>
     </form>
 </template>
 <script setup>
