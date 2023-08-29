@@ -1,6 +1,6 @@
 <template>
     <form id="form_area">
-        <div class="inp_group mt-12">
+        <div class="inp_group mt-3">
             <input v-model = 'account' required>
             <span class="">遊戲帳號</span>
             <i></i>
