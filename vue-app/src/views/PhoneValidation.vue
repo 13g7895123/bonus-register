@@ -95,7 +95,7 @@ body {
     }
 }
 
-h2, #form_area{
+h2, h3, #form_area{
     z-index: 20;
 }
 
