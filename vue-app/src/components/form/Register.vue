@@ -88,22 +88,22 @@ const submit = async() => {
         if (success){
             swalData['text'] = msg;
             swalData['icon'] = 'success';
-            swal(swalData)
+            swalFunction(swalData)
         }else{
             swalData['text'] = msg;
             swalData['icon'] = 'error';
-            swal(swalData)
+            swalFunction(swalData)
             inputInit()
         }
     }else{
         swalData['text'] = '密碼不相符，請重新確認';
         swalData['icon'] = 'error';
-        swal(swalData)
+        swalFunction(swalData)
         inputInit()
     }
 }
 
-const swal = (data) => {
+const swalFunction = (data) => {
     Swal.fire({
         title: data['title'],
         text: data['msg'],
