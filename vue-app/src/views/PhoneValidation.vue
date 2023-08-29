@@ -48,7 +48,7 @@ body {
     z-index: 1;
 }
 
-#login-box{
+#phone-validation-box{
     width: 350px;
     height: 450px;
     display: flex;
@@ -60,7 +60,7 @@ body {
     z-index: 20;
 }
 
-#login-box::before{
+#phone-validation-box::before{
     content: '';
     position: absolute;
     top: -50%;
@@ -73,7 +73,7 @@ body {
     z-index: -1;
 }
 
-#login-box::after{
+#phone-validation-box::after{
     content: '';
     position: absolute;
     top: -50%;
