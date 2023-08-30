@@ -13,7 +13,7 @@
             <i></i>
         </div>
         <div class="inp_group mt-2">
-            <input v-model = 'checkPassword' type="password" required>
+            <input v-model = 'checkPassword' type="password" required style="white-space: normal;">
             <span class="column">確認密碼</span>
             <i></i>
         </div>
