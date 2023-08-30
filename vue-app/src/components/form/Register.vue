@@ -7,7 +7,7 @@
             <i></i>
         </div>
         <div class="inp_group mt-2">
-            <input v-model='password' type="password" required>
+            <input v-model='password' @blur="passwordRule" type="password" required>
             <span class="column">密碼</span>
             <i></i>
         </div>
@@ -78,6 +78,15 @@ const accountRule = () =>{
         accountValidation.value = ''
     }else if (accountLength.value < 5 || accountLength.value > 12){
         accountValidation.value = '長度需介於5~12之間'
+    }
+}
+
+const passwordRule = () =>{
+    passwordLength.value = password.value.length
+    if(passwordLength.value == 0){
+        passwordValidation.value = ''
+    }else if (passwordLength.value < 5 || passwordLength.value > 12){
+        passwordValidation.value = '長度需介於5~12之間'
     }
 }
 
