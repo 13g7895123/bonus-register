@@ -46,7 +46,7 @@
 </template>
 <script setup>
 import IdentifyCode from '../tools/IdentifyCode.vue';
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, watchEffect } from 'vue'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 import { useRouter } from "vue-router";
@@ -60,6 +60,7 @@ const birthday = ref()
 const code = ref()
 
 const accountValidation = ref()
+const accountLength = ref()
 
 const apiUrl = ref()
 const apiParam = ref()
@@ -71,8 +72,13 @@ onMounted(() => {
     phone.value = router.currentRoute._value.params.phone
 })
 
+watchEffect(() => {
+    accountLength.value = account.value.length
+    accountRule()
+})
+
 const accountRule = () =>{
-    if (account.value.length < 5 || account.value.length > 12){
+    if (accountLength.value < 5 || accountLength.value > 12){
         accountValidation.value = '長度需介於5~12之間'
     }else{
         accountValidation.value = ''
