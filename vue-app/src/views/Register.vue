@@ -131,14 +131,11 @@ h2, #form_area{
     transition: 0.5s;
 }
 
-.column_block{
-    /* width: 50%; */
+.notice{
     position: absolute;
-    display: flex;
-    left: 0;
-    padding: 20px 10px 10px;
+    right: 0;
     font-size: 1em;
-    color: #fff;
+    color: red;
     pointer-events: none;
     letter-spacing: 0.05em;
     transition: 0.5s;
