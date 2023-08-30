@@ -60,7 +60,6 @@ const birthday = ref()
 const code = ref()
 
 const accountValidation = ref()
-let accountLength = account.value.length
 
 const apiUrl = ref()
 const apiParam = ref()
@@ -77,7 +76,7 @@ watchEffect(() => {
     accountRule()
 })
 
-
+const accountLength = (account.value.length != 0) ? account.value.length : 0
 
 const accountRule = () =>{
     if (accountLength.value < 5 || accountLength.value > 12){
