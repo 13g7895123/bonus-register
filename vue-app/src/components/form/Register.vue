@@ -3,7 +3,8 @@
         <div class="inp_group mt-3">
             <input v-model='account' @blur="accountRule" required>
             <div class="column_block">
-                <span class="w-full">遊戲帳號<span class="text-red">{{ accountValidation }}</span></span>
+                <span>遊戲帳號</span>
+                <span class="text-red">{{ accountValidation }}</span>
             </div>
             <i></i>
         </div>

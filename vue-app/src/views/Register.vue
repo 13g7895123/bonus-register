@@ -135,6 +135,7 @@ h2, #form_area{
 .column_block{
     /* width: 50%; */
     position: absolute;
+    display: flex;
     left: 0;
     padding: 20px 10px 10px;
     font-size: 1em;
