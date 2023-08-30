@@ -106,7 +106,7 @@ const passwordRule = () =>{
 }
 
 const passwordFocus = () => {
-    passwordColumn.value = '密碼(區分英文大小寫,只能包含英文字母與數字)'
+    passwordColumn.value = '密碼(區分英文大小寫,只能包含英文字母&數字)'
 }
 
 const submit = async() => {
