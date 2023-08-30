@@ -9,6 +9,7 @@
         <div class="inp_group mt-2">
             <input v-model='password' @blur="passwordRule" type="password" required>
             <span class="column">密碼</span>
+            <span class="notice text-red">{{ passwordValidation }}</span>
             <i></i>
         </div>
         <div class="inp_group mt-2">
@@ -60,7 +61,9 @@ const birthday = ref()
 const code = ref()
 
 const accountValidation = ref()
+const passwordValidation = ref()
 const accountLength = ref()
+const passwordLength = ref()
 
 const apiUrl = ref()
 const apiParam = ref()
