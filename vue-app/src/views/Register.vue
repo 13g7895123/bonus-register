@@ -121,7 +121,7 @@ h2, #form_area{
 }
 
 .inp_group span{
-    width: 100%;
+    width: 50%;
     position: absolute;
     left: 0;
     padding: 20px 10px 10px;
