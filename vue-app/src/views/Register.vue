@@ -133,7 +133,7 @@ h2, #form_area{
 }
 
 .column_block{
-    width: 50%;
+    /* width: 50%; */
     position: absolute;
     left: 0;
     padding: 20px 10px 10px;
