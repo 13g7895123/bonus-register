@@ -93,6 +93,7 @@ const passwordRule = () =>{
         passwordValidation.value = '長度需介於8~13之間'
     }
     passwordColumn.value = '密碼'
+    console.log(passwordColumn.value);
 }
 
 const passwordFocus = () => {
