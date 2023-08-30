@@ -2,8 +2,10 @@
     <form id="form_area">
         <div class="inp_group mt-3">
             <input v-model='account' @blur="accountRule" required>
-            <span class="">遊戲帳號</span>
-            <span class="text-red">{{ accountValidation }}</span>
+            <div class="flex">
+                <span class="">遊戲帳號</span>
+                <span class="text-red">{{ accountValidation }}</span>
+            </div>
             <i></i>
         </div>
         <div class="inp_group mt-2">
