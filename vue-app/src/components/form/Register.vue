@@ -74,6 +74,8 @@ onMounted(() => {
 const accountRule = () =>{
     if (account.value.length < 5 || account.value.length > 12){
         accountValidation.value = '長度需介於5~12之間'
+    }else{
+        accountValidation.value = ''
     }
 }
 
