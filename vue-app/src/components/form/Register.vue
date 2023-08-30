@@ -60,6 +60,7 @@ const birthday = ref()
 const code = ref()
 
 const accountValidation = ref()
+const accountLength = ref()
 
 const apiUrl = ref()
 const apiParam = ref()
@@ -72,6 +73,7 @@ onMounted(() => {
 })
 
 const accountRule = () =>{
+    accountLength.value = account.value.length
     if (accountLength.value < 5 || accountLength.value > 12){
         accountValidation.value = '長度需介於5~12之間'
     }else{
