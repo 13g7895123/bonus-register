@@ -71,13 +71,6 @@ onMounted(() => {
     phone.value = router.currentRoute._value.params.phone
 })
 
-watchEffect(() => {
-    accountLength
-    accountRule()
-})
-
-const accountLength = (account.value.length != 0) ? account.value.length : 0
-
 const accountRule = () =>{
     if (accountLength.value < 5 || accountLength.value > 12){
         accountValidation.value = '長度需介於5~12之間'
