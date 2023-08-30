@@ -133,7 +133,7 @@ h2, #form_area{
 
 .notice{
     position: absolute;
-    right: 0;
+    right: 0 !important;
     font-size: 1em;
     color: red;
     pointer-events: none;
