@@ -26,7 +26,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('../assets/bg.jpg') no-repeat;
+    background: url('../assets/bg-1.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     animation: bg-rotate 5s linear infinite;
