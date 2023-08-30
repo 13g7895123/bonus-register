@@ -109,7 +109,7 @@ h2, #form_area{
 .inp_group input{
     position: relative;
     width: 100%;
-    padding: 20px 10px 3px 10px;
+    padding: 20px 10px 6px 10px;
     background-color: transparent;
     border: none;
     outline: none;
