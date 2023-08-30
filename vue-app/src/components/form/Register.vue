@@ -7,8 +7,8 @@
             <i></i>
         </div>
         <div class="inp_group mt-2">
-            <input v-model='password' @blur="passwordRule" type="password" required>
-            <span class="column">密碼</span>
+            <input v-model='password' @blur="passwordRule" @focus="passwordFocus" type="password" required>
+            <span class="column">{{ passwordColumn }}</span>
             <span class="notice text-red">{{ passwordValidation }}</span>
             <i></i>
         </div>
@@ -64,6 +64,7 @@ const accountValidation = ref()
 const passwordValidation = ref()
 const accountLength = ref()
 const passwordLength = ref()
+const passwordColumn = ref('密碼')
 
 const apiUrl = ref()
 const apiParam = ref()
@@ -91,6 +92,10 @@ const passwordRule = () =>{
     }else if (passwordLength.value < 8 || passwordLength.value > 13){
         passwordValidation.value = '長度需介於8~13之間'
     }
+}
+
+const passwordFocus = () => {
+    passwordColumn.value = '密碼(區分英文大小寫，只能包含英文字母與數字)'
 }
 
 const submit = async() => {
