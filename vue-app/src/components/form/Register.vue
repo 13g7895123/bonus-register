@@ -92,6 +92,7 @@ const passwordRule = () =>{
     }else if (passwordLength.value < 8 || passwordLength.value > 13){
         passwordValidation.value = '長度需介於8~13之間'
     }
+    passwordColumn.value = '密碼'
 }
 
 const passwordFocus = () => {
