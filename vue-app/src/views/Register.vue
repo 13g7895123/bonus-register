@@ -132,6 +132,18 @@ h2, #form_area{
     transition: 0.5s;
 }
 
+.column_block{
+    width: 50%;
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
 .inp_group input:valid ~span,
 .inp_group input:focus ~span{
     font-size: 0.75em;
