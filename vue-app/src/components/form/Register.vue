@@ -89,7 +89,7 @@ const passwordRule = () =>{
     if(passwordLength.value == 0){
         passwordValidation.value = ''
     }else if (passwordLength.value < 8 || passwordLength.value > 13){
-        passwordValidation.value = '長度需介於5~12之間'
+        passwordValidation.value = '長度需介於8~13之間'
     }
 }
 
