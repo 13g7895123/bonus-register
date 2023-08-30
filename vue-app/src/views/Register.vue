@@ -120,7 +120,7 @@ h2, #form_area{
     transition: 0.5s;
 }
 
-.inp_group span{
+.inp_group div span{
     position: absolute;
     left: 0;
     padding: 20px 10px 10px;
