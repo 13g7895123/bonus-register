@@ -142,8 +142,8 @@ h2, #form_area{
     transition: 0.5s;
 }
 
-.inp_group input:valid ~span,
-.inp_group input:focus ~span{
+.inp_group input:valid ~.column,
+.inp_group input:focus ~.column{
     font-size: 0.75em;
     transform: translate(-10px, -15px);
 }
