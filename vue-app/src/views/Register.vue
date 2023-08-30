@@ -109,7 +109,7 @@ h2, #form_area{
 .inp_group input{
     position: relative;
     width: 100%;
-    padding: 20px 10px 10px;
+    padding: 20px 10px 0px 10px;
     background-color: transparent;
     border: none;
     outline: none;
@@ -118,17 +118,6 @@ h2, #form_area{
     font-size: 1em;
     letter-spacing: 0.05em;
     transition: 0.5s;
-}
-
-.inp_group span{
-    /* position: absolute;
-    left: 0;
-    padding: 20px 10px 10px;
-    font-size: 1em;
-    color: #fff;
-    pointer-events: none;
-    letter-spacing: 0.05em;
-    transition: 0.5s; */
 }
 
 .column{
