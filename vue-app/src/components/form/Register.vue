@@ -77,7 +77,11 @@ onMounted(() => {
 })
 
 const accountRule = () =>{
-    accountLength.value = account.value.length
+    if (account.value != ''){
+        accountLength.value = account.value.length
+    }else{
+        accountLength.value = 0
+    }
     if(accountLength.value == 0){
         accountValidation.value = ''
     }else if (accountLength.value < 5 || accountLength.value > 12){
@@ -86,7 +90,11 @@ const accountRule = () =>{
 }
 
 const passwordRule = () =>{
-    passwordLength.value = password.value.length
+    if (password.value != ''){
+        passwordLength.value = password.value.length
+    }else{
+        passwordLength.value = 0
+    }
     if(passwordLength.value == 0){
         passwordValidation.value = ''
     }else if (passwordLength.value < 8 || passwordLength.value > 13){
