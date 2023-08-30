@@ -1,8 +1,9 @@
 <template>
     <form id="form_area">
         <div class="inp_group mt-3">
-            <input v-model = 'account' required>
+            <input v-model='account' @blur="accountRule" required>
             <span class="">遊戲帳號</span>
+            <span class="text-red">{{ accountValidation }}</span>
             <i></i>
         </div>
         <div class="inp_group mt-2">
@@ -57,6 +58,9 @@ const password = ref()
 const checkPassword = ref()
 const birthday = ref()
 const code = ref()
+
+const accountValidation = ref()
+
 const apiUrl = ref()
 const apiParam = ref()
 const apiUrlPrefix = '/api/bonus-register/'
@@ -66,6 +70,12 @@ onMounted(() => {
     server.value = router.currentRoute._value.params.server
     phone.value = router.currentRoute._value.params.phone
 })
+
+const accountRule = () =>{
+    if (account.value.length < 5 || account.value.length > 12){
+        accountValidation.value = '長度需介於5~12之間'
+    }
+}
 
 const submit = async() => {
     let swalData = []
