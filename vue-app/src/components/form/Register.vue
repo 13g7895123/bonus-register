@@ -90,8 +90,9 @@ const accountRule = () =>{
 }
 
 const passwordRule = () =>{
+    const pwd = password.value
     if (password.value != ''){
-        passwordLength.value = password.value.length
+        passwordLength.value = pwd.length
     }else{
         passwordLength.value = 0
     }
