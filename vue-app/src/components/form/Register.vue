@@ -2,28 +2,28 @@
     <form id="form_area">
         <div class="inp_group mt-3">
             <input v-model='account' @blur="accountRule" required>
-            <span>遊戲帳號</span>
+            <span class="column">遊戲帳號</span>
             <span class="notice text-red">{{ accountValidation }}</span>
             <i></i>
         </div>
         <div class="inp_group mt-2">
             <input v-model='password' type="password" required>
-            <span class="">密碼</span>
+            <span class="column">密碼</span>
             <i></i>
         </div>
         <div class="inp_group mt-2">
             <input v-model = 'checkPassword' type="password" required>
-            <span class="">確認密碼</span>
+            <span class="column">確認密碼</span>
             <i></i>
         </div>
         <div class="inp_group mt-2">
             <input v-model = 'birthday' required>
-            <span class="">生日(西元年/月/日)</span>
+            <span class="column">生日(西元年/月/日)</span>
             <i></i>
         </div>
         <div class="inp_group mt-2">
             <input v-model = 'code' required>
-            <span>驗證碼</span>
+            <span class="column">驗證碼</span>
             <i style="width: 58%;"></i>
             <IdentifyCode
                 ref="identify"

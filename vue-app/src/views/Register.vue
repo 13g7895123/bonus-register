@@ -121,6 +121,17 @@ h2, #form_area{
 }
 
 .inp_group span{
+    /* position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s; */
+}
+
+.column{
     position: absolute;
     left: 0;
     padding: 20px 10px 10px;
