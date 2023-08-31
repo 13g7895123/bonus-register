@@ -19,9 +19,12 @@
         </div>
         <div class="inp_group mt-2">
             <!-- <input v-model = 'birthday' required> -->
-            <VueDatePicker v-model='birthday' :format="dateFormat"/>
-            <!-- <VueDatePicker v-model='date'></VueDatePicker> -->
-            <!-- <span class="column">生日(西元年/月/日)</span> -->
+            <VueDatePicker 
+                v-model='birthday' 
+                :format="dateFormat"
+                placeholder="出生年月日"
+                hide-input-icon
+            />
             <i></i>
         </div>
         <div class="inp_group mt-2">
