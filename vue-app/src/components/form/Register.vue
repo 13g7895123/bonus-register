@@ -208,7 +208,7 @@ const setIdentifyCode = (val) => {
 };
 </script>
 <style>
-.dp__outer_menu_wrap {
+.dp__outer_menu_wrap, .dp__instance_calendar, .dp__menu_inner {
     position: absolute;
     width: 100%;
     height: 100%;
