@@ -203,3 +203,8 @@ const setIdentifyCode = (val) => {
   curIdentifyCode.value = val;
 };
 </script>
+<style>
+.dp__menu_inner{
+    position: absolute;
+}
+</style>
