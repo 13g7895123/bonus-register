@@ -24,6 +24,8 @@
                 :format="dateFormat"
                 placeholder="出生年月日"
                 hide-input-icon
+                auto-apply
+                :enable-time-picker="false"
             />
             <i></i>
         </div>
