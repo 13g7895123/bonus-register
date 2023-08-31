@@ -106,7 +106,7 @@ h2, #form_area{
     position: relative;
 }
 
-.inp_group input{
+.inp_group input, VueDatePicker{
     position: relative;
     width: 100%;
     padding: 20px 10px 6px 10px;
@@ -143,7 +143,9 @@ h2, #form_area{
 }
 
 .inp_group input:valid ~.column,
-.inp_group input:focus ~.column{
+.inp_group input:focus ~.column,
+VueDatePicker:valid ~.column
+VueDatePicker:focus ~.column{
     font-size: 0.75em;
     transform: translate(-10px, -15px);
 }
