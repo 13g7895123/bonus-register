@@ -19,8 +19,8 @@
         </div>
         <div class="inp_group mt-2">
             <!-- <input v-model = 'birthday' required> -->
-            <!-- <VueDatePicker v-model='birthday'></VueDatePicker> -->
-            <VueDatePicker v-model='date'></VueDatePicker>
+            <VueDatePicker v-model='birthday'></VueDatePicker>
+            <!-- <VueDatePicker v-model='date'></VueDatePicker> -->
             <span class="column">生日(西元年/月/日)</span>
             <i></i>
         </div>
@@ -63,7 +63,7 @@ const password = ref()
 const checkPassword = ref()
 const birthday = ref()
 const code = ref()
-const date = ref()
+// const date = ref()
 
 const accountValidation = ref()
 const passwordValidation = ref()
