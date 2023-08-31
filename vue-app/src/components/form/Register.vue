@@ -19,9 +19,9 @@
         </div>
         <div class="inp_group mt-2">
             <!-- <input v-model = 'birthday' required> -->
-            <VueDatePicker v-model='birthday'></VueDatePicker>
+            <VueDatePicker v-model='birthday' :format="dateFormat"/>
             <!-- <VueDatePicker v-model='date'></VueDatePicker> -->
-            <span class="column">生日(西元年/月/日)</span>
+            <!-- <span class="column">生日(西元年/月/日)</span> -->
             <i></i>
         </div>
         <div class="inp_group mt-2">
@@ -63,7 +63,6 @@ const password = ref()
 const checkPassword = ref()
 const birthday = ref()
 const code = ref()
-// const date = ref()
 
 const accountValidation = ref()
 const passwordValidation = ref()
@@ -81,6 +80,7 @@ onMounted(() => {
     phone.value = router.currentRoute._value.params.phone
 })
 
+// 帳號規則
 const accountRule = () =>{
     if (account.value != ''){
         accountLength.value = account.value.length
@@ -94,6 +94,7 @@ const accountRule = () =>{
     }
 }
 
+// 密碼規則
 const passwordRule = () =>{
     const pwd = String(password.value)
     if (password.value != ''){
@@ -112,6 +113,13 @@ const passwordRule = () =>{
 
 const passwordFocus = () => {
     passwordColumn.value = '密碼(區分英文大小寫,只能包含英文字母&數字)'
+}
+
+const dateFormat = (birthday) => {
+    const day = birthday.getDate()
+    const month = birthday.getMonth() + 1;
+    const year = birthday.getFullYear();
+    return `${year}/${month}/${day}`
 }
 
 const submit = async() => {
