@@ -26,7 +26,6 @@
                 hide-input-icon
                 auto-apply
                 :enable-time-picker="false"
-                :alt-position="customPosition"
             />
             <i></i>
         </div>
@@ -132,7 +131,7 @@ const dateFormat = (birthday) => {
     return `${year}/${month}/${day}`
 }
 
-const customPosition = () => ({ top: 0, right: 0 });
+// const customPosition = () => ({ top: 0, right: 0 });
 
 const submit = async() => {
     let swalData = []
