@@ -111,14 +111,18 @@ const passwordRule = () =>{
     console.log(passwordColumn.value);
 }
 
+// 密碼 on focus
 const passwordFocus = () => {
     passwordColumn.value = '密碼(區分英文大小寫,只能包含英文字母&數字)'
 }
 
+// 日期格式
 const dateFormat = (birthday) => {
-    const day = birthday.getDate()
-    const month = birthday.getMonth() + 1;
+    let day = birthday.getDate()
+    let month = birthday.getMonth() + 1;
     const year = birthday.getFullYear();
+    month = (month < 10) ? `0${month}` : month
+    day = (day < 10) ? `0${day}` : day
     return `${year}/${month}/${day}`
 }
 
