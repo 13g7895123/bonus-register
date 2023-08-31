@@ -210,5 +210,7 @@ const setIdentifyCode = (val) => {
 <style>
 .dp__outer_menu_wrap {
     position: absolute;
+    width: 100%;
+    height: 100%;
 }
 </style>
