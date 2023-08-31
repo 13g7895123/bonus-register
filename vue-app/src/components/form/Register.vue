@@ -208,6 +208,9 @@ const setIdentifyCode = (val) => {
 };
 </script>
 <style>
+.dp__main dp__theme_light{
+    position: relative;
+}
 .dp__outer_menu_wrap{
     position: absolute;
     width: 100%;
