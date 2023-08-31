@@ -53,7 +53,7 @@ body {
     flex-direction: column;
     align-items: center;
     backdrop-filter: blur(10px);
-    overflow: hidden;
+    /* overflow: hidden; */
     inset: 3px;
     z-index: 20;
 }
