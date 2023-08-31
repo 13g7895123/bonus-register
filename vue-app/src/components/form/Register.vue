@@ -18,7 +18,8 @@
             <i></i>
         </div>
         <div class="inp_group mt-2">
-            <input v-model = 'birthday' required>
+            <!-- <input v-model = 'birthday' required> -->
+            <VueDatePicker v-model='birthday' required></VueDatePicker>
             <span class="column">生日(西元年/月/日)</span>
             <i></i>
         </div>
@@ -51,6 +52,8 @@ import { onMounted, ref, watchEffect } from 'vue'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 import { useRouter } from "vue-router";
+import VueDatePicker from '@vuepic/vue-datepicker';
+import '@vuepic/vue-datepicker/dist/main.css'
 
 const server = ref()
 const phone = ref()
