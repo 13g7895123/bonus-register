@@ -7,7 +7,7 @@
             <h3 id='server_name' class="text-white mt-3">【{{ server_name }}】</h3>
             <Register />
         </div>
-        <div id="register-box" class="rounded-lg">
+        <div id="register-box2" class="rounded-lg">
             <VueDatePicker 
                 v-model='birthday2' 
                 :format="dateFormat"
@@ -57,6 +57,12 @@ const get_server = async() => {
 }
 </script>
 <style>
+#register-box2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .dp__main{
     width: 280px;
     height: 50px;
