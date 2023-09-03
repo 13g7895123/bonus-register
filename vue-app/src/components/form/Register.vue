@@ -18,16 +18,16 @@
             <i></i>
         </div>
         <div class="inp_group mt-2">
-            <input v-model = 'birthday' required>
-            <span class="column">出生年月日</span>
-            <!-- <VueDatePicker 
+            <!-- <input v-model = 'birthday' required>
+            <span class="column">出生年月日</span> -->
+            <VueDatePicker 
                 v-model='birthday' 
                 :format="dateFormat"
                 placeholder="出生年月日"
                 hide-input-icon
                 auto-apply
                 :enable-time-picker="false"
-            /> -->
+            />
             <i></i>
         </div>
         <div class="inp_group mt-2">
