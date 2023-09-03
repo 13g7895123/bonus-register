@@ -62,21 +62,4 @@ const get_server = async() => {
     z-index: 999;
     background: transparent;
 }
-
-.dp__main{
-    width: 280px;
-    height: 50px;
-    position: absolute;
-    top: 24.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background: transparent;
-    z-index: 999;
-    
-}
-
-.dp__input_wrap{
-    width: 280px;
-    height: 50px;
-}
 </style>
