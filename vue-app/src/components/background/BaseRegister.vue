@@ -62,7 +62,7 @@ const get_server = async() => {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 999;
+    z-index: 9999;
 }
 .dp__main{
     width: 280px;
