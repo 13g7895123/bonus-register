@@ -2,11 +2,9 @@
     <!-- login box -->
     <div id='bg' class="w-screen h-screen">
         <div id="register-box" class="rounded-lg">
-            
-            
-        </div>
-        <div id="register-box2" class="rounded-lg">
             <div id="mask"></div>
+        </div>
+        <div id="register-form" class="rounded-lg">
             <h2 class="text-white mt-12">註冊帳號</h2>
             <h3 id='server_name' class="text-white mt-3">【{{ server_name }}】</h3>
             <Register />
@@ -51,15 +49,18 @@ const get_server = async() => {
 }
 </script>
 <style>
-#register-box2{
+#register-form{
     width: 350px;
     height: 560px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    inset: 3px;
+    z-index: 20;
 }
+
 .dp__main{
     width: 280px;
     height: 50px;
