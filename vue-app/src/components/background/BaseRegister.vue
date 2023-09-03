@@ -2,12 +2,13 @@
     <!-- login box -->
     <div id='bg' class="w-screen h-screen">
         <div id="register-box" class="rounded-lg">
-            <div id="mask"></div>
-            <h2 class="text-white mt-12">註冊帳號</h2>
-            <h3 id='server_name' class="text-white mt-3">【{{ server_name }}】</h3>
+            
             
         </div>
         <div id="register-box2" class="rounded-lg">
+            <div id="mask"></div>
+            <h2 class="text-white mt-12">註冊帳號</h2>
+            <h3 id='server_name' class="text-white mt-3">【{{ server_name }}】</h3>
             <Register />
         </div>
         
