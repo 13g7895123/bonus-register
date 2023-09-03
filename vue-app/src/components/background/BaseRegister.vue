@@ -55,6 +55,8 @@ const get_server = async() => {
 </script>
 <style>
 .dp__main{
+    width: 280px;
+    height: 50px;
     position: absolute;
     top: 0;
     left: 0;
