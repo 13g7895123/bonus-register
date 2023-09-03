@@ -9,7 +9,6 @@
             <h3 id='server_name' class="text-white mt-3">【{{ server_name }}】</h3>
             <Register />
         </div>
-        
     </div>
 </template>
 <script setup>
@@ -60,20 +59,7 @@ const get_server = async() => {
     flex-direction: column;
     align-items: center;
     backdrop-filter: blur(10px);
-    /* overflow: hidden; */
     inset: 3px;
-    /* z-index: 20; */
-}
-#register-box{
-    width: 350px;
-    height: 560px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    backdrop-filter: blur(10px);
-    overflow: hidden;
-    inset: 3px;
-    z-index: 20;
 }
 .dp__main{
     width: 280px;
