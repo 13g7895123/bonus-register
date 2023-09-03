@@ -60,6 +60,7 @@ const get_server = async() => {
     position: absolute;
     top: 0;
     left: 0;
+    background: transparent;
 }
 
 .dp__input_wrap{
