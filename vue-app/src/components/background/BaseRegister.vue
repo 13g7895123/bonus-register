@@ -59,8 +59,8 @@ const get_server = async() => {
     flex-direction: column;
     align-items: center;
     backdrop-filter: blur(10px);
-    inset: 3px;
 }
+
 .dp__main{
     width: 280px;
     height: 50px;
