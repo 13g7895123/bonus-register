@@ -60,7 +60,7 @@ const get_server = async() => {
     left: 0;
 }
 
-.dp__input{
+.dp__input_wrap{
     width: 280px;
     height: 50px;
 }
