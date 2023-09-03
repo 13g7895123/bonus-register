@@ -59,4 +59,9 @@ const get_server = async() => {
     top: 0;
     left: 0;
 }
+
+.dp__input{
+    width: 280px;
+    height: 50px;
+}
 </style>
