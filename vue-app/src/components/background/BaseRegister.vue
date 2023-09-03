@@ -52,6 +52,21 @@ const get_server = async() => {
 #register-form{
     width: 350px;
     height: 560px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    /* overflow: hidden; */
+    inset: 3px;
+    /* z-index: 20; */
+}
+#register-box{
+    width: 350px;
+    height: 560px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,7 +75,6 @@ const get_server = async() => {
     inset: 3px;
     z-index: 20;
 }
-
 .dp__main{
     width: 280px;
     height: 50px;
