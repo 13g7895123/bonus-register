@@ -24,7 +24,7 @@ const apiUrl = ref()
 const apiParam = ref()
 const apiUrlPrefix = '/api/bonus-register/'
 
-const birthday2 = ref()
+// const birthday2 = ref()
 
 onMounted(async() => {
     server.value = router.currentRoute._value.params.server
