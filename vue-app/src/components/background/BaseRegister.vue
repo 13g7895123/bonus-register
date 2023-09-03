@@ -9,7 +9,6 @@
         </div>
         <div id="register-box2" class="rounded-lg">
             <Register />
-            
         </div>
         
     </div>
