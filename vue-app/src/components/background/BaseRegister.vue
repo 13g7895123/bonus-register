@@ -58,7 +58,7 @@ const get_server = async() => {
     width: 280px;
     height: 50px;
     position: absolute;
-    top: 20rem;
+    top: 24.5rem;
     left: 50%;
     transform: translateX(-50%);
     background: transparent;
