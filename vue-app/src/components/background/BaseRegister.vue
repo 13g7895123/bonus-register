@@ -7,6 +7,14 @@
             <h3 id='server_name' class="text-white mt-3">【{{ server_name }}】</h3>
             <Register />
         </div>
+        <VueDatePicker 
+            v-model='birthday2' 
+            :format="dateFormat"
+            placeholder="出生年月日"
+            hide-input-icon
+            auto-apply
+            :enable-time-picker="false"
+        />
     </div>
 </template>
 <script setup>
@@ -21,6 +29,8 @@ const server_name = ref()
 const apiUrl = ref()
 const apiParam = ref()
 const apiUrlPrefix = '/api/bonus-register/'
+
+const birthday2 = ref()
 
 onMounted(async() => {
     server.value = router.currentRoute._value.params.server
@@ -43,3 +53,10 @@ const get_server = async() => {
     }
 }
 </script>
+<style>
+VueDatePicker{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+</style>
