@@ -58,6 +58,8 @@ const get_server = async() => {
 </script>
 <style>
 #register-box2{
+    width: 350px;
+    height: 560px;
     position: absolute;
     top: 50%;
     left: 50%;
