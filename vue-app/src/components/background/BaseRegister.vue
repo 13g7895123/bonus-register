@@ -59,6 +59,7 @@ const get_server = async() => {
     flex-direction: column;
     align-items: center;
     backdrop-filter: blur(10px);
+    z-index: 999;
 }
 
 .dp__main{
