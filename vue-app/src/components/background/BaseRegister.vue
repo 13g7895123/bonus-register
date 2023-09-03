@@ -54,7 +54,7 @@ const get_server = async() => {
 }
 </script>
 <style>
-.dp__main dp__theme_light{
+.dp__main{
     position: absolute;
     top: 0;
     left: 0;
