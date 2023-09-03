@@ -54,7 +54,7 @@ const get_server = async() => {
 }
 </script>
 <style>
-VueDatePicker{
+.dp__main dp__theme_light{
     position: absolute;
     top: 0;
     left: 0;
