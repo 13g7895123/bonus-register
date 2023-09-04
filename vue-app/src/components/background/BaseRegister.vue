@@ -22,7 +22,7 @@ const server = ref()
 const server_name = ref()
 const apiUrl = ref()
 const apiParam = ref()
-const apiUrlPrefix = '/api/bonus-register/'
+const apiUrlPrefix = '/api/'
 
 // const birthday2 = ref()
 

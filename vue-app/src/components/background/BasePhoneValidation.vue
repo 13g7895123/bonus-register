@@ -20,7 +20,7 @@ const server = ref()
 const server_name = ref()
 const apiUrl = ref()
 const apiParam = ref()
-const apiUrlPrefix = '/api/bonus-register/'
+const apiUrlPrefix = '/api/'
 
 onMounted(async() => {
     server.value = router.currentRoute._value.params.server

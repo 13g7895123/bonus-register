@@ -34,7 +34,7 @@ const phone = ref()
 const code = ref()
 const apiUrl = ref()
 const apiParam = ref()
-const apiUrlPrefix = '/api/bonus-register/'
+const apiUrlPrefix = '/api/'
 const router = useRouter()
 
 onMounted(() => {

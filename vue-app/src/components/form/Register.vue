@@ -78,7 +78,7 @@ const passwordColumn = ref('密碼')
 
 const apiUrl = ref()
 const apiParam = ref()
-const apiUrlPrefix = '/api/bonus-register/'
+const apiUrlPrefix = '/api/'
 const router = useRouter()
 
 onMounted(() => {
