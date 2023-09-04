@@ -118,7 +118,7 @@
   };
   const drawLine = (ctx) => {
     // 绘制干扰线
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 3; i++) {
       ctx.strokeStyle = randomColor(props.lineColorMin, props.lineColorMax);
       ctx.beginPath();
       ctx.moveTo(
