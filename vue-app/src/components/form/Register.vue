@@ -18,8 +18,6 @@
             <i></i>
         </div>
         <div class="inp_group mt-2">
-            <!-- <input v-model = 'birthday' required>
-            <span class="column">出生年月日</span> -->
             <VueDatePicker 
                 v-model='birthday' 
                 :format="dateFormat"
@@ -131,8 +129,6 @@ const dateFormat = (birthday) => {
     day = (day < 10) ? `0${day}` : day
     return `${year}/${month}/${day}`
 }
-
-// const customPosition = () => ({ top: 0, right: 0 });
 
 const submit = async() => {
     let swalData = []
