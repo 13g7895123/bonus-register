@@ -134,7 +134,7 @@ h2, #form_area{
 .notice{
     position: absolute;
     left: none;
-    right: -15px;
+    right: 0px;
     top: 28px;
     font-size: 0.7em;
     color: red;
