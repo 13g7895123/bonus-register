@@ -139,7 +139,8 @@ const submit = async() => {
             account: account.value,
             password: password.value,
             phone: phone.value,
-            birthday: birthday.value
+            birthday: birthday.value,
+            server: server.value
         })
         apiParam.value = '?action=register'
         apiUrl.value = apiUrlPrefix + "register.php" + apiParam.value
