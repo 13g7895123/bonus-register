@@ -7,6 +7,19 @@
         </div>
         <div class="inp_group mt-2">
             <input v-model = 'code' required>
+            <span class="column">驗證碼</span>
+            <i style="width: 58%;"></i>
+            <IdentifyCode
+                ref="identify"
+                class="code-box"
+                :contentWidth="110"
+                :contentHeight="40"
+                @updateIdentifyCode="setIdentifyCode"
+                >
+            </IdentifyCode>
+        </div>
+        <div class="inp_group mt-2">
+            <input v-model = 'code' required>
             <span>認證碼</span>
             <i style="width: 60%;"></i>
             <div id='btn_send_code' class="btn" @click="sendCode">發送認證碼</div>
@@ -28,6 +41,7 @@ import { onMounted, ref } from 'vue'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 import { useRouter } from "vue-router";
+import IdentifyCode from '../tools/IdentifyCode.vue';
 
 const server = ref()
 const phone = ref()
@@ -130,6 +144,22 @@ const submit = async() => {
         code.value = ''
     }
 }
+
+const identify = ref(null);
+const validateIdentifyCode = (rule, value, callback) => {
+    if (value !== curIdentifyCode.value) {
+        callback(new Error("驗證碼错误!"));
+        state.loginForm.identifyCode = "";
+        identify.value.refreshCode();
+    } else {
+        callback();
+    }
+};
+let curIdentifyCode = ref("");
+
+const setIdentifyCode = (val) => {
+  curIdentifyCode.value = val;
+};
 </script>
 <style>
 
