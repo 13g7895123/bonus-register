@@ -39,8 +39,24 @@ const get_server = async() => {
     )
 
     if (success){
-        server_name.value = data;
+        console.log(data);
     }
 }
 
 </script>
+<style>
+#bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../assets/bg-1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: bg-rotate 5s linear infinite;
+}
+@keyframes bg-rotate{
+    100% {
+        filter: hue-rotate(360deg);
+    }
+} 
+</style>
