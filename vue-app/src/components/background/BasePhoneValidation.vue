@@ -1,6 +1,6 @@
 <template>
     <!-- login box -->
-    <div id='bg' class="w-screen h-screen">
+    <div id='bg' class="w-screen h-screen" :style="{ 'background-image': 'url(' + server_bg + ')' }">
         <div id="phone-validation-box" class="rounded-lg">
             <div id="mask"></div>
             <h2 class="text-white mt-12">註冊帳號</h2>
@@ -18,6 +18,7 @@ import axios from 'axios'
 const router = useRouter()
 const server = ref()
 const server_name = ref()
+const server_bg = ref()
 const apiUrl = ref()
 const apiParam = ref()
 const apiUrlPrefix = '/api/'
@@ -40,6 +41,7 @@ const get_server = async() => {
 
     if (success){
         server_name.value = data.name
+        server_bg.value = data.bg
     }
 }
 
