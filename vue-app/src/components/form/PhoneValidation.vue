@@ -57,6 +57,7 @@ onMounted(() => {
 })
 
 const sendCode = async() => {
+    console.log(phone.value);
     if (phone.value != ''){     // 驗證手機號碼不可為空值
         if (validationCode.value == curIdentifyCode.value){     // 驗證碼
             const formData = ref({
