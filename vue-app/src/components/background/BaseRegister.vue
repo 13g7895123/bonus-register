@@ -1,6 +1,6 @@
 <template>
     <!-- login box -->
-    <div id='bg' class="w-screen h-screen">
+    <div id='bg' class="w-screen h-screen" :style="{ 'background-image': 'url(' + server_bg + ')' }">
         <div id="register-box" class="rounded-lg">
             <div id="mask"></div>
         </div>
@@ -20,6 +20,7 @@ import axios from 'axios'
 const router = useRouter()
 const server = ref()
 const server_name = ref()
+const server_bg = ref()
 const apiUrl = ref()
 const apiParam = ref()
 const apiUrlPrefix = '/api/'
@@ -44,6 +45,7 @@ const get_server = async() => {
 
     if (success){
         server_name.value = data.name;
+        server_bg.value = 'http://missa.mercylife.cc/' + data.bg
     }
 }
 </script>
