@@ -41,7 +41,7 @@ const get_server = async() => {
 
     if (success){
         server_name.value = data.name
-        server_bg.value = data.bg
+        server_bg.value = 'http://missa.mercylife.cc/' + data.bg
     }
 }
 
@@ -51,7 +51,7 @@ const get_server = async() => {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('../../assets/bg-1.jpg') no-repeat;
+    background: no-repeat;
     background-size: cover;
     background-position: center;
     animation: bg-rotate 5s linear infinite;
