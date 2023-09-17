@@ -39,6 +39,7 @@ const get_server = async() => {
     )
 
     if (success){
+        server_name.value = data
         console.log(data);
     }
 }
