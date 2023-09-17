@@ -35,7 +35,7 @@ body {
 
 #phone-validation-box{
     width: 350px;
-    height: 450px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
