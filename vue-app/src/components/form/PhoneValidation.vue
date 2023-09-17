@@ -58,31 +58,42 @@ onMounted(() => {
 
 const sendCode = async() => {
     console.log(phone.value);
-    if (typeof(phone.value) != 'undefined' || phone.value != ''){     // 驗證手機號碼不可為空值
-        if (validationCode.value == curIdentifyCode.value){     // 驗證碼
-            const formData = ref({
-                phone: phone.value,
-            })
-            apiParam.value = '?action=sendCode'
-            apiUrl.value = apiUrlPrefix + "phone.php" + apiParam.value
+    if (phone.value != ''){     // 驗證手機號碼不可為空值
+        if (typeof(phone.value) != 'undefined'){
+            if (validationCode.value == curIdentifyCode.value){     // 驗證碼
+                const formData = ref({
+                    phone: phone.value,
+                })
+                apiParam.value = '?action=sendCode'
+                apiUrl.value = apiUrlPrefix + "phone.php" + apiParam.value
 
-            const { data: { success, msg } } = await axios.post(
-                apiUrl.value, formData.value
-            )
+                const { data: { success, msg } } = await axios.post(
+                    apiUrl.value, formData.value
+                )
 
-            if (success){
-                Swal.fire({
-                    title: '系統通知',
-                    text: msg,
-                    icon: 'success',
-                    showConfirmButton: false,
-                    showCancelButton: false,
-                    timer: 2000
-                })     
+                if (success){
+                    Swal.fire({
+                        title: '系統通知',
+                        text: msg,
+                        icon: 'success',
+                        showConfirmButton: false,
+                        showCancelButton: false,
+                        timer: 2000
+                    })     
+                }else{
+                    Swal.fire({
+                        title: '系統訊息',
+                        text: msg,
+                        icon: 'error',
+                        showConfirmButton: false,
+                        showCancelButton: false,
+                        timer: 2000
+                    })
+                }
             }else{
                 Swal.fire({
                     title: '系統訊息',
-                    text: msg,
+                    text: '驗證碼錯誤',
                     icon: 'error',
                     showConfirmButton: false,
                     showCancelButton: false,
@@ -91,15 +102,14 @@ const sendCode = async() => {
             }
         }else{
             Swal.fire({
-                title: '系統訊息',
-                text: '驗證碼錯誤',
-                icon: 'error',
-                showConfirmButton: false,
-                showCancelButton: false,
-                timer: 2000
-            })
+            title: '系統訊息',
+            text: '請輸入手機號碼',
+            icon: 'error',
+            showConfirmButton: false,
+            showCancelButton: false,
+            timer: 2000
+        })
         }
-        
     }else{
         // please input phone
         Swal.fire({
