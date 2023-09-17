@@ -91,7 +91,7 @@ const sendCode = async() => {
         }else{
             Swal.fire({
                 title: '系統訊息',
-                text: '請輸入手機號碼',
+                text: '驗證碼錯誤',
                 icon: 'error',
                 showConfirmButton: false,
                 showCancelButton: false,
