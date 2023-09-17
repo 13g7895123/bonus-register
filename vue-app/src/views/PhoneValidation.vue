@@ -146,4 +146,10 @@ h2, h3, #form_area{
     cursor: pointer;
     background-color: #fff;
 }
+
+.code-box{
+    position: absolute;
+    right: 0;
+    top: 14px;
+}
 </style>
