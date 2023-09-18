@@ -11,11 +11,11 @@ export default defineConfig({
     host: true,
     port: 8000,
     proxy: {
-      // '/api': {
-      //   target: 'http://170.187.229.132:9091/api/bonus-register',
-      //   changeOrigin: true,
-      //   rewrite: (path) => path.replace(/^\/api/, '')
-      // }
+      '/api': {
+        target: 'http://170.187.229.132:9091/api/bonus-register',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '')
+      }
     }
   },
   base: './',
