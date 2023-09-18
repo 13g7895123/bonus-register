@@ -42,13 +42,14 @@ import axios from 'axios'
 import Swal from 'sweetalert2'
 import { useRouter } from "vue-router";
 import IdentifyCode from '../tools/IdentifyCode.vue';
+import { api_path } from './common';
 
 const server = ref()
 const phone = ref()
 const code = ref()
 const apiUrl = ref()
 const apiParam = ref()
-const apiUrlPrefix = '/api/'
+const apiUrlPrefix = api_path
 const router = useRouter()
 const validationCode = ref()
 
