@@ -1,9 +1,9 @@
 const routes = [
-    // {
-    //     path: "/",
-    //     name: 'Home',
-    //     component: () => import('../views/Base.vue'),
-    // },
+    {
+        path: "/",
+        name: 'Home',
+        component: () => import('../views/Base.vue'),
+    },
     {
         path: "/phonevalidation/:server",
         name: 'phoneValidation',
