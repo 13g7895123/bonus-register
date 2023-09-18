@@ -14,6 +14,7 @@ import PhoneValidation from '../form/PhoneValidation.vue';
 import { onMounted, ref } from 'vue'
 import { useRouter } from "vue-router";
 import axios from 'axios'
+import { api_path } from './common';
 
 const router = useRouter()
 const server = ref()
@@ -21,7 +22,7 @@ const server_name = ref()
 const server_bg = ref()
 const apiUrl = ref()
 const apiParam = ref()
-const apiUrlPrefix = '/api/'
+const apiUrlPrefix = api_path
 
 onMounted(async() => {
     server.value = router.currentRoute._value.params.server
