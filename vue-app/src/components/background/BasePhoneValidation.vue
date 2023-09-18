@@ -14,7 +14,7 @@ import PhoneValidation from '../form/PhoneValidation.vue';
 import { onMounted, ref } from 'vue'
 import { useRouter } from "vue-router";
 import axios from 'axios'
-import { api_path } from './common';
+import { api_path } from './common.js';
 
 const router = useRouter()
 const server = ref()

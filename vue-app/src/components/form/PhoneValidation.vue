@@ -42,7 +42,7 @@ import axios from 'axios'
 import Swal from 'sweetalert2'
 import { useRouter } from "vue-router";
 import IdentifyCode from '../tools/IdentifyCode.vue';
-import { api_path } from './common';
+import { api_path } from './common.js';
 
 const server = ref()
 const phone = ref()
