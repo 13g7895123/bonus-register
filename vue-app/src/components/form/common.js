@@ -1,1 +1,1 @@
-export const api_path = 'http://170.187.229.132:9091/api/bonus-register/'
+export const api_path = 'http://127.0.0.1/api/bonus-register/'
