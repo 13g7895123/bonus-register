@@ -29,11 +29,11 @@ const routes = [
         name: 'test',
         component: () => import('../views/Test.vue'),
     },
-    {
-        path: '/:catchAll(.*)',
-        name: '404',
-        component: () => import('../views/404.vue')
-    }
+    // {
+    //     path: '/:catchAll(.*)',
+    //     name: '404',
+    //     component: () => import('../views/404.vue')
+    // }
 ]
 
 export default routes
